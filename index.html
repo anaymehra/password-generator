@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Password Generator</h1>
+        <div class="result">
+            <input type="text" id="passBox">
+            <input type="range" min="1" max="20" value="8" class="range-bar">
+        </div>
+        
+        <div class="row">
+            <p>Password Length</p><p class="bar-range">8</p>
+        </div>
+        <div class="row">
+            <label for="Lowercase"><p>Include Lowercase Letters (a-z)</p></label>
+            <input type="checkbox" id ="Lowercase" name="Lowercase" >
+        </div>
+        <div class="row">
+            <label for="Uppercase"><p>Include Uppercase Letters (A-Z)</p></label>
+            <input type="checkbox" id ="Uppercase" name="Uppercase">
+        </div>
+        <div class="row">
+            <label for="Numbers"><p>Include Numbers (0-9)</p></label>
+            <input type="checkbox" id ="Numbers" name="Numbers">
+        </div>
+        <div class="row">
+            <label for="Special"><p>Include Special Characters (~-+)</p></label>
+            <input type="checkbox" id="Special" name="Special">
+        </div>
+            <button type="button" class="btn">Generate Password</button>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
